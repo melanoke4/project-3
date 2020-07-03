@@ -1,0 +1,22 @@
+.navbar {
+    background-color: rgb(245, 76, 76);
+    height: 4vh;
+    font-size: 14px;
+}
+
+.alert-p {
+    font-size: 14px;
+    margin: auto 0;
+    padding-bottom: 1vh;
+    color: black;
+}
+
+#icon {
+    font-size: 20px;
+    padding-right: 1vh;
+    padding-top: 1vh;
+}
+ 
+.nav-link {
+    color: black;
+}

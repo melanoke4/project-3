@@ -1,0 +1,16 @@
+.logo {
+    height: 18vh;
+}
+
+.navbar-nav {
+    font-size: 18px;
+}
+
+.navbar {
+    margin-top: 4vh;
+    background-color: rgb(137, 123, 226);
+}
+
+.nav-link {
+    color: black;
+}
