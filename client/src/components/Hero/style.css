@@ -1,0 +1,28 @@
+  #img-header {
+    background: url("https://skidos.com/wp-content/uploads/2017/10/22042016055812_simply.jpg") no-repeat center;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    position: relative;
+  }
+
+.hero-text {
+  float: left;
+  font-family: cursive;
+  color: goldenrod;
+  width: 32%;
+  background:#d3ded9;
+  padding-bottom: 10px;
+}
+
+.header {
+  font-size: 45px;
+}
+
+.subheading {
+  font-size: 32px;
+}
+
+.info-p {
+  font-size: 16px;
+}

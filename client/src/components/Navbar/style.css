@@ -1,0 +1,21 @@
+.logo {
+    height: 20vh;
+}
+
+.navbar-nav {
+    font-size: 18px;
+}
+
+.navbar {
+    background-color: #d3ded9;
+    height: 16vh;
+}
+
+.nav-link {
+    color: black;
+    font-size: 18px;
+}
+
+.nav-pills .show>.nav-link {
+    background-color: #212d29;
+}
