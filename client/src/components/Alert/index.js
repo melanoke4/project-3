@@ -3,22 +3,16 @@ import "./style.css";
 
 function Alert() {
   return (
-    <nav className="navbar navbar-expand-lg">
+    <nav className="navbar navbar-expand-lg" id="alert">
       <div className="container">
         <a href="#" class="navbar-brand">
           <p className="alert-p">
             <u>
-              <i className="fa fa-exclamation-circle" id="icon"></i><strong>Fall classes start August 1.</strong>
+              <i className="fa fa-exclamation-circle" id="icon"></i><strong>New Course Coming Soon: Bootstrap</strong>
             </u>
           </p>
         </a>
-        <button
-          className="navbar-toggler"
-          data-toggle="collapse"
-          data-target="alertNav"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
+
         <div
           className="collapse navbar-collapse justify-content-end"
           id="alertNav"

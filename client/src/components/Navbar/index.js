@@ -32,6 +32,9 @@ const NavbarMain = (props) => {
           <NavItem>
             <NavLink href="#">Register</NavLink>
           </NavItem>
+          <NavItem>
+            <NavLink href="#">Login</NavLink>
+          </NavItem>
           <Dropdown nav isOpen={dropdownOpen} toggle={toggle}>
             <DropdownToggle nav caret>
               Courses
