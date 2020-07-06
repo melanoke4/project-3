@@ -12,7 +12,7 @@ const cookieParser = require("cookie-parser");
 const bcrypt = require("bcryptjs");
 const session = require("express-session");
 const bodyParser = require("body-parser");
-const User = require("./models/user");
+const User = require("./models/UserModel");
 const registerRouter = require("./routes/API/register");
 
 //--------------------END OF MIDDLEWARE----------------
