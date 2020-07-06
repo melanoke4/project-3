@@ -13,6 +13,7 @@ const bcrypt = require("bcryptjs");
 const session = require("express-session");
 const bodyParser = require("body-parser");
 const User = require("./models/user");
+const registerRouter = require("./routes/API/register");
 
 //--------------------END OF MIDDLEWARE----------------
 mongoose.connect(
@@ -46,6 +47,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 require("./passportConfig")(passport);
 
+app.use('/register', registerRouter);
 //--------------------END OF MIDDLEWARE----------------
 
 

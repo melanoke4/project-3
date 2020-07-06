@@ -16,7 +16,7 @@ function App() {
         password: registerPassword,
       },
       withCredentials: true,
-      url: "http://localhost:3001/register",
+      url: "http://localhost:3000/register",
     }).then((res) => console.log(res));
   };
   const login = () => {
@@ -27,14 +27,14 @@ function App() {
         password: loginPassword,
       },
       withCredentials: true,
-      url: "http://localhost:3001/login",
+      url: "http://localhost:3000/login",
     }).then((res) => console.log(res));
   };
   const getUser = () => {
     Axios({
       method: "GET",
       withCredentials: true,
-      url: "http://localhost:3001/user",
+      url: "http://localhost:3000/user",
     }).then((res) => {
       setData(res.data);
       console.log(res.data);
