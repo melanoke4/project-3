@@ -1,18 +1,19 @@
 import React from "react";
 import Hero from "../components/Hero";
-
+import Alert from "../components/Alert";
 import CardGroup from "../components/CardGroup";
-import Container from "../components/Container";
+import Navbar from "../components/Navbar";
 
 
 function Home() {
     return(
         <div>
-            
+            <Alert />
+            <Navbar />
             <Hero />
-            <Container>
-                    <CardGroup />
-            </Container>
+            <CardGroup />
+            
+           
         </div>
     );
 }

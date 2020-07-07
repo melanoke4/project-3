@@ -23,7 +23,9 @@ const NavbarMain = (props) => {
     <Navbar expand="lg" className="navbar">
       <Container>
         <NavbarBrand>
-          <img src="./images/logo.PNG" className="logo" />
+          <a href="/">
+            <img src="./images/logo.PNG" className="logo" />
+          </a>
         </NavbarBrand>
         <Nav pills className="justify-content-end">
         <NavItem>

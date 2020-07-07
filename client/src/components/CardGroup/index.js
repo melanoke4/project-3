@@ -11,6 +11,7 @@ import {
 const CardDeckMain = (props) => {
   return (
     <div className="container">
+      <h1 className="title text-center">ALL COURSES ARE BEGINNER FRIENDLY</h1>
       <CardDeck className="text-center">
         <Card className="shadow p-3 mb-5 bg-white rounded">
           <CardImg
