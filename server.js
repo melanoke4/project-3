@@ -22,19 +22,19 @@ if (process.env.NODE_ENV === "production") {
 // Define any API routes before this runs
 
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-var test = {
-  word: "hello"
-};
+// var test = {
+//   word: "hello"
+// };
 
-db.Test.create(test)
-.then(function(tests) {
-  // If saved successfully, print the new Example document to the console
-  console.log(tests);
-})
-.catch(function(err) {
-  // If an error occurs, log the error message
-  console.log(err.message);
-});
+// db.Test.create(test)
+// .then(function(tests) {
+//   // If saved successfully, print the new Example document to the console
+//   console.log(tests);
+// })
+// .catch(function(err) {
+//   // If an error occurs, log the error message
+//   console.log(err.message);
+// });
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
