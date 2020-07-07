@@ -1,9 +1,9 @@
 import React from "react";
 // import Alert from "./components/Alert";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-// import Home from "./pages/Home";
+import Home from "./pages/Home";
 // import About from "./pages/About";
-import Courses from "./pages/Courses";
+// import Courses from "./pages/Courses";
 // import Register from "./pages/Register";
 // import Login from "./pages/Login";
 import Wrapper from "./components/Wrapper";
@@ -15,7 +15,7 @@ function App() {
    <Router>
      <div>
       <Wrapper>
-        <Route exact path="/" component={ Courses }/>
+        <Route exact path="/" component={ Home }/>
         
       </Wrapper>
      </div>
