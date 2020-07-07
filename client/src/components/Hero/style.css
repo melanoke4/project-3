@@ -1,13 +1,17 @@
   #img-header {
-    background: url("https://skidos.com/wp-content/uploads/2017/10/22042016055812_simply.jpg") no-repeat center;
+    background: url("https://skidos.com/wp-content/uploads/2017/10/22042016055812_simply.jpg");
     background-size: cover;
+    background-position: 30% 0;
+    background-repeat: no-repeat;
     height: 500px;
     width: 100%;
     position: relative;
   }
 
 .hero-text {
+  margin-left: 1vh;
   float: left;
+  padding-left: 2vh;
   font-family: cursive;
   color: goldenrod;
   width: 32%;
@@ -21,6 +25,8 @@
 
 .subheading {
   font-size: 32px;
+  padding-bottom: 3vh;
+  padding-top: 3vh;
 }
 
 .info-p {
