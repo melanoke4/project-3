@@ -15,7 +15,6 @@ const bodyParser = require("body-parser");
 const User = require("./models/UserModel");
 const registerRouter = require("./routes/API/register");
 
-//--------------------END OF MIDDLEWARE----------------
 mongoose.connect(
   "mongodb://heroku_fx40ddwn:admin@ds049558.mlab.com:49558/heroku_fx40ddwn",
   {
@@ -50,18 +49,10 @@ require("./passportConfig")(passport);
 app.use('/register', registerRouter);
 //--------------------END OF MIDDLEWARE----------------
 
-
-//routes
-
-
-
-
-
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
-
 
 // Send every other request to the React app
 // Define any API routes before this runs
@@ -73,8 +64,6 @@ app.get("*", (req, res) => {
 var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/KidsCodingCorner";
 
 mongoose.connect(MONGODB_URI);
-
-
 
 app.listen(PORT, () => {
   console.log(`🌎 ==> API server now on port ${PORT}!`);
