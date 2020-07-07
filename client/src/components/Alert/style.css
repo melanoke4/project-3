@@ -1,0 +1,19 @@
+.msg-text {
+    color: black;
+}
+
+#icon {
+    font-size: 20px;
+    padding-right: 1vh;
+}
+
+.msg-row {
+    text-align: center;
+    height: 4vh;
+    font-size: 12px;
+    background-color: #2eb2ff;
+    font-size: 12px;
+    color: black;
+}
+
+
