@@ -12,6 +12,8 @@ function Home() {
             <Navbar />
             <Hero />
             <CardGroup />
+            
+           
         </div>
     );
 }
