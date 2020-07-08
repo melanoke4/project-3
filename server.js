@@ -5,22 +5,59 @@ const PORT = process.env.PORT || 3001;
 const app = express();
 const mongoose = require("mongoose");
 const db = require("./models");
+const cors = require("cors");
+const passport = require("passport");
+const passportLocal = require("passport-local").Strategy;
+const cookieParser = require("cookie-parser");
+const bcrypt = require("bcryptjs");
+const session = require("express-session");
+const bodyParser = require("body-parser");
+const User = require("./models/UserModel");
+const registerRouter = require("./routes/API/register");
 
+mongoose.connect(
+  "mongodb://heroku_fx40ddwn:admin@ds049558.mlab.com:49558/heroku_fx40ddwn",
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  },
+  () => {
+    console.log("Mongoose Is Connected");
+  }
+);
 
 app.use(logger("dev"));
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(cors({
+  origin: "http://localhost:3001", //location on app we are connecting to
+  credentials: true
+}));
+app.use(session({
+  secret: "secretcode",
+  resave: true,
+  saveUninitialized: true
+}));
+app.use(cookieParser("secretcode"));
+app.use(passport.initialize());
+app.use(passport.session());
+require("./passportConfig")(passport);
+
+app.use('/register', registerRouter);
+//--------------------END OF MIDDLEWARE----------------
+
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
 
-// Define API routes here
-
 // Send every other request to the React app
 // Define any API routes before this runs
 
+<<<<<<< HEAD
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // var test = {
 //   word: "hello"
@@ -38,6 +75,8 @@ if (process.env.NODE_ENV === "production") {
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
+=======
+>>>>>>> 74debcbfd67f7838ce2472a118213c09d67aeff2
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
@@ -45,8 +84,6 @@ app.get("*", (req, res) => {
 var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/KidsCodingCorner";
 
 mongoose.connect(MONGODB_URI);
-
-
 
 app.listen(PORT, () => {
   console.log(`🌎 ==> API server now on port ${PORT}!`);
