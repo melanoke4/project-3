@@ -13,7 +13,8 @@ const bcrypt = require("bcryptjs");
 const session = require("express-session");
 const bodyParser = require("body-parser");
 const User = require("./models/UserModel");
-const registerRouter = require("./routes/API/register");
+const registerRouter = require("./routes/API/registerRouter");
+const loginRouter = require("./routes/API/loginRouter");
 
 mongoose.connect(
   "mongodb://heroku_fx40ddwn:admin@ds049558.mlab.com:49558/heroku_fx40ddwn",
@@ -47,6 +48,7 @@ app.use(passport.session());
 require("./passportConfig")(passport);
 
 app.use('/register', registerRouter);
+app.use('/login', loginRouter);
 //--------------------END OF MIDDLEWARE----------------
 
 // Serve up static assets (usually on heroku)
