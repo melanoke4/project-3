@@ -16,16 +16,28 @@ const User = require("./models/UserModel");
 const registerRouter = require("./routes/API/registerRouter");
 const loginRouter = require("./routes/API/loginRouter");
 
-mongoose.connect(
-  "mongodb://heroku_fx40ddwn:admin@ds049558.mlab.com:49558/heroku_fx40ddwn",
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  },
-  () => {
-    console.log("Mongoose Is Connected");
-  }
-);
+
+
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/KidsCodingCorner";
+
+mongoose.connect(MONGODB_URI,{
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+},
+() => {
+  console.log("Mongoose Is Connected");
+});
+
+// mongoose.connect(
+//   "mongodb://heroku_fx40ddwn:admin@ds049558.mlab.com:49558/heroku_fx40ddwn",
+//   {
+//     useNewUrlParser: true,
+//     useUnifiedTopology: true,
+//   },
+//   () => {
+//     console.log("Mongoose Is Connected");
+//   }
+// );
 
 app.use(logger("dev"));
 // Define middleware here
@@ -62,10 +74,7 @@ if (process.env.NODE_ENV === "production") {
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
-
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/KidsCodingCorner";
-
-mongoose.connect(MONGODB_URI);
+Z
 
 app.listen(PORT, () => {
   console.log(`🌎 ==> API server now on port ${PORT}!`);
