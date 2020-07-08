@@ -16,16 +16,28 @@ const User = require("./models/UserModel");
 const registerRouter = require("./routes/API/registerRouter");
 const loginRouter = require("./routes/API/loginRouter");
 
-mongoose.connect(
-  "mongodb://heroku_fx40ddwn:admin@ds049558.mlab.com:49558/heroku_fx40ddwn",
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  },
-  () => {
-    console.log("Mongoose Is Connected");
-  }
-);
+
+
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/KidsCodingCorner";
+
+mongoose.connect(MONGODB_URI,{
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+},
+() => {
+  console.log("Mongoose Is Connected");
+});
+
+// mongoose.connect(
+//   "mongodb://heroku_fx40ddwn:admin@ds049558.mlab.com:49558/heroku_fx40ddwn",
+//   {
+//     useNewUrlParser: true,
+//     useUnifiedTopology: true,
+//   },
+//   () => {
+//     console.log("Mongoose Is Connected");
+//   }
+// );
 
 app.use(logger("dev"));
 // Define middleware here
@@ -59,33 +71,10 @@ if (process.env.NODE_ENV === "production") {
 // Send every other request to the React app
 // Define any API routes before this runs
 
-<<<<<<< HEAD
-// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-// var test = {
-//   word: "hello"
-// };
-
-// db.Test.create(test)
-// .then(function(tests) {
-//   // If saved successfully, print the new Example document to the console
-//   console.log(tests);
-// })
-// .catch(function(err) {
-//   // If an error occurs, log the error message
-//   console.log(err.message);
-// });
-// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-
-=======
->>>>>>> 74debcbfd67f7838ce2472a118213c09d67aeff2
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
-
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/KidsCodingCorner";
-
-mongoose.connect(MONGODB_URI);
+Z
 
 app.listen(PORT, () => {
   console.log(`🌎 ==> API server now on port ${PORT}!`);
