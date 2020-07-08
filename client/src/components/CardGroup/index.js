@@ -26,7 +26,7 @@ const CardDeckMain = (props) => {
               Check in on your child's progress to help support their learning
               and success.
             </CardText>
-            <a href="" className="btn btn-secondary">
+            <a href="/register" className="btn btn-secondary">
               Register your Child
             </a>
           </CardBody>
@@ -44,7 +44,7 @@ const CardDeckMain = (props) => {
               Create a comfortable learning experience with full access to
               collection of tutorials and demonstrations.{" "}
             </CardText>
-            <a href="" className="btn btn-secondary">
+            <a href="/courses" className="btn btn-secondary">
               Course List
             </a>
           </CardBody>

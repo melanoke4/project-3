@@ -44,7 +44,7 @@ const CoursesSection = (props) => {
             <div className="card mb-3">
               <img src="./images/1java.png" alt="" className="card-img-top" />
               <div className="card-body">
-                  <a href="" className="" />
+                  <a href="#" className="" />
                 <h5 className="card-title">JavaScript</h5>
                 <span className="learn">Select</span>
                 <h6 className="card-subtitle text-muted mb-2">$59.99</h6>

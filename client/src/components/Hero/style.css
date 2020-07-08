@@ -1,7 +1,7 @@
   #img-header {
     background: url("https://skidos.com/wp-content/uploads/2017/10/22042016055812_simply.jpg");
     background-size: cover;
-    background-position: 30% 0;
+    background-position: 45% 0;
     background-repeat: no-repeat;
     height: 500px;
     width: 100%;
@@ -31,4 +31,9 @@
 
 .info-p {
   font-size: 16px;
+}
+
+#kccLogo {
+  height: 100%;
+  margin-left: 10vh;
 }
