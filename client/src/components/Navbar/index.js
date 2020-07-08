@@ -32,7 +32,7 @@ const NavbarMain = (props) => {
             <NavLink href="#">About</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#">Register</NavLink>
+            <NavLink href="/Register">Register</NavLink>
           </NavItem>
           <NavItem>
             <NavLink href="#">Login</NavLink>
