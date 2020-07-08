@@ -1,6 +1,8 @@
 const router = require("express").Router();
+const passport = require("passport");
+// const loginController = require("../../controllers/loginController");
 
-app.post("/login", (req, res, next) => {
+router.post("/", (req, res, next) => {
     passport.authenticate("local", (err, user, info) => {
       if (err) throw err;
       if (!user) res.send("No User Exists");
@@ -13,3 +15,5 @@ app.post("/login", (req, res, next) => {
       }
     })(req, res, next);
   });
+
+  module.exports = router;
