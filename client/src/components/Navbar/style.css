@@ -1,7 +1,7 @@
 .logo {
     padding-top: 1vh;
     padding-bottom: 1vh;
-    height: 17vh;
+    height: 15vh;
 }
 
 .navbar-nav {
@@ -10,6 +10,10 @@
 
 .navbar {
     height: 12vh;
+    /* background-image: url("/client/public/images/bgpattern.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
 
 }
 
