@@ -28,17 +28,6 @@ mongoose.connect(MONGODB_URI,{
   console.log("Mongoose Is Connected");
 });
 
-// mongoose.connect(
-//   "mongodb://heroku_fx40ddwn:admin@ds049558.mlab.com:49558/heroku_fx40ddwn",
-//   {
-//     useNewUrlParser: true,
-//     useUnifiedTopology: true,
-//   },
-//   () => {
-//     console.log("Mongoose Is Connected");
-//   }
-// );
-
 app.use(logger("dev"));
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
