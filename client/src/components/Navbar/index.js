@@ -14,7 +14,7 @@ import {
 } from "reactstrap";
 import "./style.css";
 
-const NavbarMain = () => {
+const NavbarMain = (props) => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const toggle = () => setDropdownOpen(!dropdownOpen);

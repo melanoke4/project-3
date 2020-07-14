@@ -10,7 +10,7 @@ import Register from "./pages/Register";
 import Wrapper from "./components/Wrapper";
 import Cart from "./pages/Cart";
 // import Footer from "./components/Footer";
-// import Quiz from "./pages/Quiz";
+import Quiz from "./pages/Quiz";
 
 
 
@@ -38,7 +38,7 @@ class App extends React.Component {
         <Route exact path="/" component={ Home }/>
         <Route exact path="/Courses" render={(props) => {
           return <CoursesSection {...props} addToCart={this.addToCart} /> }}/>
-        {/* <Route exact path="/Quiz" component={ Quiz }/> */}
+        <Route exact path="/Quiz" component={ Quiz }/>
         <Route exact path="/Cart" component={ Cart } />
         <Route exact path="/Register" component={ Register }/>
       </Wrapper>

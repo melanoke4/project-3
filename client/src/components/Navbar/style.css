@@ -1,0 +1,27 @@
+.logo {
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    height: 15vh;
+}
+
+.navbar-nav {
+    font-size: 16px;
+}
+
+.navbar {
+    height: 12vh;
+    /* background-image: url("/client/public/images/bgpattern.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+
+}
+
+.nav-link {
+    color: black;
+    font-size: 18px;
+}
+
+.nav-pills .show>.nav-link {
+    background-color: #212d29;
+}
