@@ -9,17 +9,18 @@ import Register from "./pages/Register";
 // import Login from "./pages/Login";
 import Wrapper from "./components/Wrapper";
 // import Footer from "./components/Footer";
-// import Quiz from "./pages/Quiz";
+import Quiz from "./pages/Quiz";
 
 
 function App() {
+  
   return (
    <Router>
      <div>
       <Wrapper>
         <Route exact path="/" component={ Home }/>
         <Route exact path="/Courses" component={ Courses }/>
-        {/* <Route exact path="/Quiz" component={ Quiz }/> */}
+        <Route exact path="/Quiz" component={ Quiz }/>
         
         <Route exact path="/Register" component={ Register }/>
       </Wrapper>
