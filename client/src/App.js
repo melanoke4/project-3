@@ -1,20 +1,51 @@
-import React, { Component } from "react";
-import logo from "./logo.svg";
-import "./App.css";
 
-class App extends Component {
+import React from "react";
+// import Alert from "./components/Alert";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Home from "./pages/Home";
+// import About from "./pages/About";
+import CoursesSection from "./pages/Courses";
+import Register from "./pages/Register";
+// import Login from "./pages/Login";
+import Wrapper from "./components/Wrapper";
+import Cart from "./pages/Cart";
+// import Footer from "./components/Footer";
+// import Quiz from "./pages/Quiz";
+
+
+
+class App extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state={cart: []};
+  }
+
+  addToCart = (product) => {
+    this.setState((state) => {
+      return{
+        cart: state.cart.concat(product)
+      }
+    })
+  }
   render() {
-    return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
+
+  console.log(this.addToCart);
+
+  return (
+   <Router>
+     <div>
+      <Wrapper>
+        <Route exact path="/" component={ Home }/>
+        <Route exact path="/Courses" render={(props) => {
+          return <CoursesSection {...props} addToCart={this.addToCart} /> }}/>
+        {/* <Route exact path="/Quiz" component={ Quiz }/> */}
+        <Route exact path="/Cart" component={ Cart } />
+        <Route exact path="/Register" component={ Register }/>
+      </Wrapper>
+     </div>
+   </Router>
+  );
+
   }
 }
 
