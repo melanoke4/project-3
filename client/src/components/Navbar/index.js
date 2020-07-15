@@ -29,7 +29,7 @@ const NavbarMain = (props) => {
         </NavbarBrand>
         <Nav pills className="justify-content-end">
         <NavItem>
-            <NavLink href="#">About</NavLink>
+            <NavLink href="/">Home</NavLink>
           </NavItem>
           <NavItem>
             <NavLink href="/Register">Register</NavLink>
