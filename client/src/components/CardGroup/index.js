@@ -59,7 +59,7 @@ const CardDeckMain = (props) => {
           <CardBody>
             <CardTitle>Step by Step Tutorial</CardTitle>
             <CardText>Some Text Here</CardText>
-            <a href="" className="btn btn-secondary">
+            <a href="/" className="btn btn-secondary">
               Some Link
             </a>
           </CardBody>
