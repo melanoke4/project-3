@@ -23,13 +23,13 @@ const NavbarMain = (props) => {
     <Navbar expand="lg" className="navbar">
       <Container>
         <NavbarBrand>
-          <a href="/">
-            <img src="./images/logo.PNG" className="logo" />
-          </a>
+          <div>
+            <img src="./images/logo.PNG" alt="" className="logo" />
+          </div>
         </NavbarBrand>
         <Nav pills className="justify-content-end">
         <NavItem>
-            <NavLink href="#">About</NavLink>
+            <NavLink href="/">Home</NavLink>
           </NavItem>
           <NavItem>
             <NavLink href="/Register">Register</NavLink>
@@ -42,7 +42,7 @@ const NavbarMain = (props) => {
               Courses
             </DropdownToggle>
             <DropdownMenu>
-              <DropdownItem>HTML5</DropdownItem>
+              <DropdownItem href="/courses">HTML5</DropdownItem>
               <DropdownItem divider />
               <DropdownItem>CSS3</DropdownItem>
               <DropdownItem divider />

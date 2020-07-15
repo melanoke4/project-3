@@ -15,7 +15,7 @@ const Hero = (props) => {
         <div className="col-md-6">
           <div className="container">
             <a href="/courses">
-              <img src="./images/kcc.png" id="kccLogo" />
+              <img src="./images/kcc.png" alt="" id="kccLogo" />
             </a>
           </div>
         </div>
