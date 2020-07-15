@@ -6,7 +6,17 @@ h1 {
     font-family: 'Nanum Gothic Coding', monospace;
 }
 
-img {
+#html{
+    padding-top: 2vh;
+    height: 400px;
+}
+
+#css{
+    padding-top: 2vh;
+    height: 400px;
+}
+
+#java{
     padding-top: 2vh;
     height: 400px;
 }
@@ -27,3 +37,23 @@ img {
     text-transform: uppercase;
     text-decoration: none;
 }
+
+.products {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.products img {
+    width: 100%;
+}
+
+.product {
+    padding: 40px;
+}
+
+.cart-button {
+    font-size: 20px;
+    padding: 10px;
+}
+
+
