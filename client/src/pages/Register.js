@@ -3,8 +3,10 @@ import React, { useState } from "react";
 import Axios from "axios";
 import Alert from "../components/Alert";
 import Navbar from "../components/Navbar";
+import { useHistory } from "react-router-dom";
 
 function Register() {
+    const history = useHistory();
     const [registerUsername, setRegisterUsername] = useState("");
     const [registerPassword, setRegisterPassword] = useState("");
     const [loginUsername, setLoginUsername] = useState("");
@@ -30,7 +32,12 @@ function Register() {
             },
             withCredentials: true,
             url: "http://localhost:3000/login",
-        }).then((res) => console.log(res));
+        }).then(data => {
+            if (data.status === 200) {
+                history.push("/");
+                console.log('Successfully Login');
+            }
+        });
     };
     return (
         <div className="App">
