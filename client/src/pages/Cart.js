@@ -7,9 +7,13 @@ function Cart() {
 
     return(
         <div>
+//           login/reg
+            <h1>Your Cart</h1>
+
             <Alert />
             <Navbar />
             <ShoppingCart />
+
         </div>
        
     );

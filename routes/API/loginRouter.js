@@ -9,7 +9,7 @@ router.post("/", (req, res, next) => {
       else {
         req.logIn(user, (err) => {
           if (err) throw err;
-          res.send("Successfully Authenticated");
+          res.send(user);
           console.log(req.user);
         });
       }

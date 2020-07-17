@@ -1,30 +1,17 @@
 const User = require("../models/UserModel");
+const passport = require("passport");
 
 module.exports = {
     create: function (req, res) {
-
-        // User.findOne({ username: req.body.username }, async (err, doc) => {
-        //     if (err) throw err;
-        //     if (doc) res.send("User Already Exists");
-        //     if (!doc) {
-        //       const hashedPassword = await bcrypt.hash(req.body.password, 10);
-
-        //       const newUser = new User({
-        //         username: req.body.username,
-        //         // password: req.body.password
-        //         password: hashedPassword
-        //       });
-        //       await newUser.save();
-        //       res.send("User Created");
-        //     }
-        //   });
-        User.create(req.body)
-            .then(dbModel => {
-                res.json(dbModel)
-            })
-            .catch(err => {
+        User.register(new User({ username: req.body.username }), req.body.password, function (err, user) {
+            if (err) {
                 console.log(err);
-                res.status(422).json(err)
+                return res.send({message: "Failed to register new user.", error: err});
+            }
+
+            passport.authenticate('local')(req, res, function () {
+                res.redirect('/');
             });
+        });
     }
 };
