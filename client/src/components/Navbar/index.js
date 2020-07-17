@@ -32,10 +32,7 @@ const NavbarMain = (props) => {
             <NavLink href="/">Home</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="/Register">Register</NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink href="#">Login</NavLink>
+            <NavLink href="/Register">Login</NavLink>
           </NavItem>
           <Dropdown nav isOpen={dropdownOpen} toggle={toggle}>
             <DropdownToggle nav caret>
@@ -51,8 +48,12 @@ const NavbarMain = (props) => {
           </Dropdown>
         </Nav>
       </Container>
-    </Navbar>
+    </Navbar> 
   );
 };
 
 export default NavbarMain;
+
+
+
+

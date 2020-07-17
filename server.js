@@ -7,9 +7,7 @@ const mongoose = require("mongoose");
 const db = require("./models");
 const cors = require("cors");
 const passport = require("passport");
-const passportLocal = require("passport-local").Strategy;
 const cookieParser = require("cookie-parser");
-const bcrypt = require("bcryptjs");
 const session = require("express-session");
 const bodyParser = require("body-parser");
 const User = require("./models/UserModel");
@@ -133,17 +131,6 @@ mongoose.connect(MONGODB_URI,{
   console.log("Mongoose Is Connected");
 });
 
-// mongoose.connect(
-//   "mongodb://heroku_fx40ddwn:admin@ds049558.mlab.com:49558/heroku_fx40ddwn",
-//   {
-//     useNewUrlParser: true,
-//     useUnifiedTopology: true,
-//   },
-//   () => {
-//     console.log("Mongoose Is Connected");
-//   }
-// );
-
 app.use(logger("dev"));
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
@@ -156,13 +143,18 @@ app.use(cors({
 }));
 app.use(session({
   secret: "secretcode",
-  resave: true,
+  resave: false,
   saveUninitialized: true
 }));
 app.use(cookieParser("secretcode"));
+
 app.use(passport.initialize());
 app.use(passport.session());
-require("./passportConfig")(passport);
+
+/* PASSPORT LOCAL AUTHENTICATION */
+passport.use(User.createStrategy());
+passport.serializeUser(User.serializeUser());
+passport.deserializeUser(User.deserializeUser());
 
 app.use('/register', registerRouter);
 app.use('/login', loginRouter);
