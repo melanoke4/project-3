@@ -10,6 +10,8 @@
 
 .navbar {
     height: 12vh;
+    right: 0;
+    left: 0;
     /* background-image: url("/client/public/images/bgpattern.png");
     background-position: center;
     background-repeat: no-repeat;
