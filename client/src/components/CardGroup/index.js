@@ -23,7 +23,7 @@ const CardDeckMain = (props) => {
           <CardBody>
             <CardTitle>Parent Tracking</CardTitle>
             <CardText>
-              Check in on your child's progress to help support their learning
+              Separate parent login to check in on your child's progress and accomplishments to help support their learning
               and success.
             </CardText>
             <a href="/register" className="btn btn-secondary">
@@ -44,8 +44,8 @@ const CardDeckMain = (props) => {
               Create a comfortable learning experience with full access to
               collection of tutorials and demonstrations.{" "}
             </CardText>
-            <a href="/courses" className="btn btn-secondary">
-              Course List
+            <a href="/resources" className="btn btn-secondary">
+              Resources
             </a>
           </CardBody>
         </Card>
@@ -57,10 +57,10 @@ const CardDeckMain = (props) => {
             alt="Card image cap"
           />
           <CardBody>
-            <CardTitle>Step by Step Tutorial</CardTitle>
-            <CardText>Some Text Here</CardText>
-            <a href="/" className="btn btn-secondary">
-              Some Link
+            <CardTitle>Intro to Coding</CardTitle>
+            <CardText>Designed with hands-on learning activities that your kid will truly enjoy! As kids master each skill, they advance to the next level.</CardText>
+            <a href="/courses" className="btn btn-secondary">
+              Courses
             </a>
           </CardBody>
         </Card>
