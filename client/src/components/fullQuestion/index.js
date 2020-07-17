@@ -2,7 +2,7 @@ import React from "react";
 import Question from "../Question";
 import AnswerOptions from "../AnswerOptions";
 
-function fullQuestion() {
+function fullQuestion(props) {
     return (
       <div>
         <form action="/action_page.php">

@@ -2,7 +2,7 @@ import React from 'react';
 
   function Question(props) {
     return (
-      <h2 className="question">This Is my Question</h2>
+      <h2 className="question">{props.question}</h2>
     );
   }
  
