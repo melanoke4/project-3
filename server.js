@@ -13,6 +13,12 @@ const bodyParser = require("body-parser");
 const User = require("./models/UserModel");
 const registerRouter = require("./routes/API/registerRouter");
 const loginRouter = require("./routes/API/loginRouter");
+
+
+
+
+
+
 //=================STRIPE additions
 const { resolve } = require('path');
 require('dotenv').config({ path: './.env' });
