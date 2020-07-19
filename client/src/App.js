@@ -1,15 +1,15 @@
 import React from "react";
-// import Alert from "./components/Alert";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Home from "./pages/Home";
 // import About from "./pages/About";
 import CoursesSection from "./pages/Courses";
 import Register from "./pages/Register";
-// import Login from "./pages/Login";
 import Wrapper from "./components/Wrapper";
-// import Cart from "./pages/Cart";
 // import Footer from "./components/Footer";
-import Quiz from "./pages/Quiz";
+import Quiz from "./components/Quiz";
+import HTML from "./pages/HTML";
+import CSS from "./pages/CSS";
+import Javascript from "./pages/Javascript";
 
 
 
@@ -20,8 +20,14 @@ function App() {
       <Wrapper>
         <Route exact path="/" component={ Home }/>
         <Route exact path="/Courses" component={ CoursesSection }/>
-        <Route exact path="/Quiz" component={ Quiz }/>
+        <Route path="/Quiz" exact component={ Quiz }/>
         <Route exact path="/Register" component={ Register }/>
+        <Route exact path="/html" component={ HTML } />
+        <Route exact path="/css" component={ CSS } />
+        <Route exact path="/javascript" component={ Javascript } />
+
+    
+        
       </Wrapper>
      </div>
    </Router>
