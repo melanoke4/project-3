@@ -1,0 +1,32 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.alert {
+    font-size: 15px;
+}
+
+code {
+    font-family: Consolas, "courier new";
+    color: orangered;
+    background-color: #f1f1f1;
+    padding: 2px;
+    font-size: 105%;
+}
+
+#header-html {
+    height: 15vh;
+}
