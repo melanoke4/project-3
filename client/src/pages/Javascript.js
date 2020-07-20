@@ -1,13 +1,15 @@
 import React from "react";
-import QuizBtn from "../components/QuizBtn/QuizBtn";
 import ContentJava from "../components/ContentJava";
+import { Link } from "react-router-dom";
 
 function Javascript() {
     return(
         <>
         <ContentJava />
         <br />
-        <QuizBtn />
+        <Link to="/js-quiz" className="btn btn-primary">
+            Take Quiz
+        </Link>
         </>
     );
 }
