@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "lessonName": "What is HTML?",
+    "body": "HTML is the standard markup language for web pages.\nWhat that means is that if you learn the basics of HTML you will be able to make your own websites!\nHTML stands for  Hypertext Markup Language",
+    "Question1": {
+      "question": "What is HTML primarily used for?",
+      "answers": [
+        { "answer1": "Creating artificial intelligence", "correct": false },
+        { "answer1": "Creating Webpages", "correct": true },
+        { "answer1": "Making minecraft mods", "correct": false }
+      ]
+    },
+    "Question2": {
+      "question": "What does HTML stand for for?",
+      "answers": [
+        { "answer1": "Hypertext Markup Language", "correct": true },
+        { "answer1": "HyperT-rex Mach Loop", "correct": false },
+        { "answer1": "Head to Mind Language", "correct": false }
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "lessonName": "Tag it!?",
+    "body": "HTML tags are the hidden keywords within a web page that define how your web browser must format and display the content.\nTags are used to mark up the start of an HTML element and they are usually enclosed in angle brackets. An example of a tag is:\n <h1>.\n Most tags must be opened <h1> and closed </h1> in order to function.",
+    "Question1": {
+      "question": "What is a tag in HTML?",
+      "answers": [
+        { "answer1": "Keywords that define how a bit of html code is displayed", "correct": true},
+        { "answer1": "Grafitti that is used to teach coding to people in large cities.", "correct": false },
+        { "answer1": "An identifying piece of metal placed around a dog or cats neck so they can be returned to their owner if they are lost", "correct": false }
+      ]
+    },
+    "Question2": {
+      "question": "How do you close an <h1> tag?",
+      "answers": [
+        { "answer1": "<h1/>", "correct": true },
+        { "answer1": ">h1<", "correct": false },
+        { "answer1": ">h1/>", "correct": false }
+      ]
+    }
+  }
+]

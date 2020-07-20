@@ -13,6 +13,7 @@ import {
   NavLink,
 } from "reactstrap";
 import "./style.css";
+import Avatar from "../avatar";
 
 const NavbarMain = (props) => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -47,6 +48,7 @@ const NavbarMain = (props) => {
             </DropdownMenu>
           </Dropdown>
         </Nav>
+        <Avatar/>
       </Container>
     </Navbar> 
   );

@@ -14,8 +14,6 @@ const User = require("./models/UserModel");
 const registerRouter = require("./routes/API/registerRouter");
 const loginRouter = require("./routes/API/loginRouter");
 
-
-
 var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/KidsCodingCorner";
 
 mongoose.connect(MONGODB_URI,{

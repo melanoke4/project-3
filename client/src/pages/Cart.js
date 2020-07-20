@@ -1,21 +1,21 @@
 import React from "react";
 import Alert from "../components/Alert";
 import Navbar from "../components/Navbar";
-import CourseGroup from "../components/CourseGroup";
-import Quotes from "../components/Quotes";
+import ShoppingCart from "../components/ShoppingCart";
 
+function Cart() {
 
-
-
-function Courses() {
     return(
         <div>
+            <h1>Your Cart</h1>
+
             <Alert />
             <Navbar />
-            <CourseGroup />
-            <Quotes />
+            <ShoppingCart />
+
         </div>
+       
     );
 }
 
-export default Courses;
+export default Cart;

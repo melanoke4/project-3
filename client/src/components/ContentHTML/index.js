@@ -20,7 +20,7 @@ const ContentHTML = () => {
                 <div className="card-body">
                   <h5 className="card-title"> Simple HTML Document </h5>
                   <li className="card-text">
-                    <code> !DOCTYPE </code> Defines that htis document is an
+                    <code> !DOCTYPE </code> Defines that this document is an
                     HTML5 doc
                   </li>
                   <li className="card-text">

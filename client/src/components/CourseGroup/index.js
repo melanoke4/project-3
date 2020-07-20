@@ -1,22 +1,17 @@
-import React, { useState }from "react";
+import React, { useState } from "react";
 import "./style.css";
-
-
-
+import Checkout from "../../Checkout";
 
 const CoursesSection = (props) => {
-
-  
   const [products] = useState([
-    { name: "HTML5", cost: "$35.00", image: "./images/html.png" },
-    { name: "CSS3", cost: "$45.00", image: "./images/css.png" },
-    { name: "JavaScript", cost: "$55.00", image: "./images/java.png" },
+    { name: "HTML5", cost: 35.00, image: "./images/html.png"},
+    { name: "CSS3", cost: 45.00, image: "./images/css.png"},
+    { name: "JavaScript", cost: 55.00, image: "./images/java.png"},
   ]);
-
 
   return (
     <>
-    <h1 className="display-3 text-center">Front End Courses</h1>
+      <h1 className="display-3 text-center">Front End Courses</h1>
       <div className="container">
         <div className="row">
           {products.map((product, idx) => (
@@ -31,12 +26,17 @@ const CoursesSection = (props) => {
                   />
                   <div className="card-body">
                     <h5 className="card-title">{product.name}</h5>
-                    <button className="learn" href="/purchase"
-                    >
-                      <span>Purchase</span>
-                    </button>
+                    {/* this is stripe button  */}
+                    <p className="App-intro">
+                      <Checkout
+                        name={"Kids Coding Corner"}
+                        description={product.name}
+                        amount={product.cost}
+                      />
+                    </p>
+{/* ===================================================== */}
                     <h6 className="card-subtitle text-muted mb-2">
-                      {product.cost}
+                      ${product.cost}
                     </h6>
                     <ul className="card-text">
                       <li>Learn Web Development Essentials</li>

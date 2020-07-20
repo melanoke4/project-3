@@ -1,19 +1,19 @@
 {
-  "name": "mern",
+  "name": "coding-activity-page",
   "version": "0.1.0",
   "description": "Mern Demo",
   "private": true,
   "proxy": "http://localhost:3001/",
   "dependencies": {
     "axios": "^0.19.2",
+    "babel": "^6.23.0",
     "classnames": "^2.2.6",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^2.1.1",
     "react-spring": "^8.0.27",
-    "react-stripe-elements": "^6.1.2",
-    "stripe": "^8.69.0",
+    "react-stripe-checkout": "^2.6.3",
     "styled-components": "^5.1.1"
   },
   "scripts": {
