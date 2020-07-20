@@ -1,13 +1,15 @@
 import React from "react";
-import QuizBtn from "../components/QuizBtn/QuizBtn";
 import ContentCSS from "../components/ContentCSS";
+import { Link } from "react-router-dom";
 
 function CSS() {
     return(
         <>
         <ContentCSS />
         <br />
-        <QuizBtn />
+        <Link to="/css-quiz" className="btn btn-primary">
+        Take Quiz
+        </Link>
         </>
     );
 }

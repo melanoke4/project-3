@@ -26,4 +26,22 @@ export const questions = [
         answer_d: 'newref',
         correct_answer: 'c',
     },
+    {
+        id: 4,
+        question: 'What is HTML primarily used for?',
+        answer_a: 'Creating artificial Intelligence',
+        answer_b: 'Creating Webpages',
+        answer_c: 'Making Minecraft mods',
+        answer_d: 'Whats HTML?',
+        correct_answer: 'b',
+    },
+    {
+        id: 5,
+        question: 'How do you close an <h1> tag?',
+        answer_a: '<h1/>',
+        answer_b: '>h1<',
+        answer_c: '>h1/>',
+        answer_d: '</close>',
+        correct_answer: 'a',
+    },
 ];

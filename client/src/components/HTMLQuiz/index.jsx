@@ -3,7 +3,7 @@ import './style.css';
 import Progress from "../Progress";
 import Question from "../Question";
 import Answers from "../Answers";
-import { questions } from '../../data/quizData';
+import { questions } from '../../data/htmlQuiz';
 
 function Quiz() {
     const [currentQuestion, setCurrentQuestion] = useState(0);
