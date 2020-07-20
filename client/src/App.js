@@ -10,7 +10,7 @@ import Quiz from "./components/Quiz";
 import HTML from "./pages/HTML";
 import CSS from "./pages/CSS";
 import Javascript from "./pages/Javascript";
-
+import Profile from "./pages/Profile"
 
 
 function App() {
@@ -25,7 +25,7 @@ function App() {
         <Route exact path="/html" component={ HTML } />
         <Route exact path="/css" component={ CSS } />
         <Route exact path="/javascript" component={ Javascript } />
-
+        <Route exact path="/Profile" component={ Profile } />
     
         
       </Wrapper>
