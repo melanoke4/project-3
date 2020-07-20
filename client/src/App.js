@@ -6,7 +6,9 @@ import CoursesSection from "./pages/Courses";
 import Register from "./pages/Register";
 import Wrapper from "./components/Wrapper";
 // import Footer from "./components/Footer";
-import Quiz from "./components/Quiz";
+import HTMLQuiz from "./components/HTMLQuiz";
+import CSSQuiz from "./components/CSSQuiz";
+import JSQuiz from "./components/JSQuiz";
 import HTML from "./pages/HTML";
 import CSS from "./pages/CSS";
 import Javascript from "./pages/Javascript";
@@ -20,13 +22,14 @@ function App() {
       <Wrapper>
         <Route exact path="/" component={ Home }/>
         <Route exact path="/Courses" component={ CoursesSection }/>
-        <Route path="/Quiz" exact component={ Quiz }/>
         <Route exact path="/Register" component={ Register }/>
         <Route exact path="/html" component={ HTML } />
         <Route exact path="/css" component={ CSS } />
         <Route exact path="/javascript" component={ Javascript } />
-
-    
+        <Route path="/html-quiz" exact component={ HTMLQuiz }/>
+        <Route path="/js-quiz" exact component={ JSQuiz }/>
+        <Route path="/css-quiz" exact component={ CSSQuiz }/>
+     
         
       </Wrapper>
      </div>
