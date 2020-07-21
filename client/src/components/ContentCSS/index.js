@@ -4,7 +4,7 @@ import "./style.css";
 const ContentCSS = () => {
     return(
         <div className="container-fluid">
-      <h1 className="display-1 text-center">CSS<span><img src="./images/css.png" id="header-css" /></span></h1>
+      <h1 className="display-1 text-center">CSS<span><img src="./images/css.png" alt="" id="header-css" /></span></h1>
       <div className="row">
         <div className="col-lg-9">
           <div className="alert alert-info text-center" role="alert">
@@ -48,7 +48,7 @@ const ContentCSS = () => {
                   className="card-img-top"
                   src="./images/css-example.PNG"
                   id="example-html"
-                  alt="Card image cap"
+                  alt=""
                 />
               </div>
             </div>
@@ -61,7 +61,7 @@ const ContentCSS = () => {
                   className="card-img-top"
                   src="./images/css-code.PNG"
                   id="example-html"
-                  alt="Card image cap"
+                  alt=""
                 />
               </div>
             </div>
@@ -74,7 +74,7 @@ const ContentCSS = () => {
                   className="card-img-top"
                   src="./images/css-html.PNG"
                   id="example-html"
-                  alt="Card image cap"
+                  alt=""
                 />
               </div>
             </div>

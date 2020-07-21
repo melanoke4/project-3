@@ -27,17 +27,6 @@ h1 {
     text-align: center;
 }
 
-.learn {
-    display: inline-block;
-    border-bottom: 2px solid #fdc743;
-    margin-bottom: 6px;
-    font-weight: 700;
-    font-size: 13px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
 .products {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -48,12 +37,6 @@ h1 {
 }
 
 .product {
-    padding: 40px;
+    padding: 5px;
 }
-
-.cart-button {
-    font-size: 20px;
-    padding: 10px;
-}
-
 

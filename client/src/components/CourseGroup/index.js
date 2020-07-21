@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import "./style.css";
 import Checkout from "../../Checkout";
+import { Link } from "react-router-dom";
 
 const CoursesSection = (props) => {
   const [products] = useState([
-    { name: "HTML5", cost: 35.00, image: "./images/html.png"},
-    { name: "CSS3", cost: 45.00, image: "./images/css.png"},
-    { name: "JavaScript", cost: 55.00, image: "./images/java.png"},
+    { name: "HTML5", cost: 35.00, image: "./images/html.png", link: "/html"},
+    { name: "CSS3", cost: 45.00, image: "./images/css.png", link: "/css"},
+    { name: "JavaScript", cost: 55.00, image: "./images/java.png", link: "/javascript"},
   ]);
 
   return (
@@ -27,14 +28,18 @@ const CoursesSection = (props) => {
                   <div className="card-body">
                     <h5 className="card-title">{product.name}</h5>
                     {/* this is stripe button  */}
-                    <p className="App-intro">
+                    <p className="App-intro" id="purchase">
                       <Checkout
                         name={"Kids Coding Corner"}
                         description={product.name}
                         amount={product.cost}
                       />
-                    </p>
+                    </p>              
 {/* ===================================================== */}
+                    <a href={product.link} className="btn btn-outline-primary btn-sm" id="content-btn">
+                      Course Content
+                    </a>
+                                        
                     <h6 className="card-subtitle text-muted mb-2">
                       ${product.cost}
                     </h6>
