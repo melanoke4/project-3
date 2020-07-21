@@ -1,10 +1,11 @@
 import React from 'react';
 import "./style.css";
+import { Link } from "react-router-dom";
 
 const ContentJava = () => {
     return(
         <div className="container-fluid">
-        <h1 className="display-1 text-center">Javascript<span><img src="./images/java.png" id="header-js"/></span></h1>
+        <h1 className="display-1 text-center">Javascript<span><img src="./images/java.png" id="header-js" alt="" /></span></h1>
         <div className="row">
           <div className="col-lg-9">
             <div className="alert alert-info text-center" role="alert">
@@ -21,7 +22,7 @@ const ContentJava = () => {
                     className="card-img-top"
                     src="./images/js-code1.PNG"
                     id="example-html"
-                    alt="Card image cap"
+                    alt=""
                   />
                 </div>
               </div>
@@ -35,7 +36,7 @@ const ContentJava = () => {
                     className="card-img-top"
                     src="./gif/pbj.gif"
                     id="example-html"
-                    alt="Card image cap"
+                    alt=""
                   />
                 </div>
               </div>
@@ -49,7 +50,7 @@ const ContentJava = () => {
                     className="card-img-top"
                     src="./images/js-code.PNG"
                     id="example-html"
-                    alt="Card image cap"
+                    alt=""
                   />
                 </div>
               </div>
@@ -61,7 +62,7 @@ const ContentJava = () => {
                     className="card-img-top"
                     src="./gif/js.gif"
                     id="example-html"
-                    alt="Card image cap"
+                    alt=""
                   />
                 </div>
               </div>
@@ -111,6 +112,13 @@ const ContentJava = () => {
           {/* table section ends */}
   
         </div>
+
+        <div className="d-flex justify-content-center">
+          <Link to="/js-quiz" className="btn" id="JSBtn">
+            CSS3 Quiz
+          </Link>
+        </div>
+
       </div>
     );
 };

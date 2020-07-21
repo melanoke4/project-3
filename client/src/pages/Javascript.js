@@ -1,15 +1,13 @@
 import React from "react";
 import ContentJava from "../components/ContentJava";
-import { Link } from "react-router-dom";
+import Navbar from "../components/Navbar";
 
 function Javascript() {
     return(
         <>
+        <Navbar />
         <ContentJava />
-        <br />
-        <Link to="/js-quiz" className="btn btn-primary">
-            Take Quiz
-        </Link>
+        
         </>
     );
 }

@@ -30,3 +30,9 @@ code {
 #header-js {
     height: 15vh;
 }
+
+#JSBtn {
+    color: navy;
+    background-color: #f0db4f;
+    justify-content: center;
+}
