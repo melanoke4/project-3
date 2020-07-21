@@ -1,8 +1,10 @@
 import React from "react";
 import "./style.css";
+import { Link } from "react-router-dom";
 
 const ContentHTML = () => {
   return (
+    <>
     <div className="container-fluid">
       <h1 className="display-1 text-center">HTML<span><img src="./images/html.png" id="header-html" alt=""/> </span></h1>
       <div className="row">
@@ -171,7 +173,15 @@ const ContentHTML = () => {
         {/* table section ends */}
 
       </div>
-    </div>
+      <div className="d-flex justify-content-center">
+        <Link to="/html-quiz" className="btn" id="HTMLBtn">
+          HTML5 Quiz
+        </Link>
+      </div>
+      
+    </div>  
+    
+    </>  
   );
 };
 

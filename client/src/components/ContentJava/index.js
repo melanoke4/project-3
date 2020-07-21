@@ -1,5 +1,6 @@
 import React from 'react';
 import "./style.css";
+import { Link } from "react-router-dom";
 
 const ContentJava = () => {
     return(
@@ -111,6 +112,13 @@ const ContentJava = () => {
           {/* table section ends */}
   
         </div>
+
+        <div className="d-flex justify-content-center">
+          <Link to="/js-quiz" className="btn" id="JSBtn">
+            CSS3 Quiz
+          </Link>
+        </div>
+
       </div>
     );
 };

@@ -1,5 +1,6 @@
 import React from 'react';
 import "./style.css";
+import { Link } from "react-router-dom";
 
 const ContentCSS = () => {
     return(
@@ -129,6 +130,13 @@ const ContentCSS = () => {
         {/* table section ends */}
 
       </div>
+
+      <div className="d-flex justify-content-center">
+        <Link to="/css-quiz" className="btn" id="CSSBtn">
+          CSS3 Quiz
+        </Link>
+      </div>
+
     </div>
     );
 };
