@@ -5,35 +5,37 @@ import Home from "./pages/Home";
 import CoursesSection from "./pages/Courses";
 import Register from "./pages/Register";
 import Wrapper from "./components/Wrapper";
-// import Footer from "./components/Footer";
+import Footer from "./components/Footer";
 import HTMLQuiz from "./components/HTMLQuiz";
 import CSSQuiz from "./components/CSSQuiz";
 import JSQuiz from "./components/JSQuiz";
 import HTML from "./pages/HTML";
 import CSS from "./pages/CSS";
 import Javascript from "./pages/Javascript";
-
+import Profile from "./pages/Profile";
 
 
 function App() {
   return (
-   <Router>
-     <div>
-      <Wrapper>
-        <Route exact path="/" component={ Home }/>
-        <Route exact path="/Courses" component={ CoursesSection }/>
-        <Route exact path="/Register" component={ Register }/>
-        <Route exact path="/html" component={ HTML } />
-        <Route exact path="/css" component={ CSS } />
-        <Route exact path="/javascript" component={ Javascript } />
-        <Route path="/html-quiz" exact component={ HTMLQuiz }/>
-        <Route path="/js-quiz" exact component={ JSQuiz }/>
-        <Route path="/css-quiz" exact component={ CSSQuiz }/>
-     
-        
-      </Wrapper>
-     </div>
-   </Router>
+    <div>
+      <Router>
+        <div>
+          <Wrapper>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/Courses" component={CoursesSection} />
+            <Route exact path="/Register" component={Register} />
+            <Route exact path="/html" component={HTML} />
+            <Route exact path="/css" component={CSS} />
+            <Route exact path="/javascript" component={Javascript} />
+            <Route exact path="/Profile" component={Profile} />
+            <Route path="/html-quiz" exact component={HTMLQuiz} />
+            <Route path="/js-quiz" exact component={JSQuiz} />
+            <Route path="/css-quiz" exact component={CSSQuiz} />
+          </Wrapper>
+        </div>
+      </Router>
+      <Footer />
+    </div>
   );
 }
 export default App;
