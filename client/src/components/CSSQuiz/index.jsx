@@ -79,10 +79,10 @@ const renderResultMark = (question, answer) => {
       <div className="results" id="results">
             
             <a href="/html">
-            <button className="btn btn-success">HTML5</button>
+              <button className="btn btn-success">HTML5</button>
             </a>
             <a href="/javascript">
-            <button className="btn btn-success">JavaScript</button>
+              <button className="btn btn-success">JavaScript</button>
             </a>
       <h2 id="h2">Results</h2>
       <ul>{renderResultsData()}</ul>

@@ -33,7 +33,7 @@ const NavbarMain = (props) => {
             <NavLink href="/">Home</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="/Register">Login</NavLink>
+            <NavLink href="/Register">Register</NavLink>
           </NavItem>
           <Dropdown nav isOpen={dropdownOpen} toggle={toggle}>
             <DropdownToggle nav caret>

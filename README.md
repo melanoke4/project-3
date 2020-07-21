@@ -1,16 +1,16 @@
-# Kids Coding Corner <span img=src'./client/public/images/logo.PNG'>
+# Kids Coding Corner <span><img=src'./client/public/images/logo.PNG'></span>
 
 <h2>Kids Coding Corner is an online educational site where parents can purchase a 
 beginners course in HTML5, CSS3 or Javascript for their child. Users will be able to browse the site, register, login and purchase a course using Stripe. </h2>
 
 ## Preview
-Visit the site here - <a href="www.google.com">Kids Coding Corner</a> <br>
+Visit the site here - <a href="https://kids-coding-corner.herokuapp.com/">Kids Coding Corner</a> <br>
 "GIF OF ALL FEATURES"
 
 ## Learning Experiences
 -Vance: "" <br>
 -Zach: "" <br>
--Melanie: "" <br>
+-Melanie: "" 
 
 ## Why the Project is Useful
 The app fulfilled a project assignment for University of Vanderbilt Coding Bootcamp. This project provided us with the opportunity to develop our understanding of the following technologies:

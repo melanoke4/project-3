@@ -2,6 +2,7 @@
     padding-top: 1vh;
     padding-bottom: 1vh;
     height: 15vh;
+    margin-left: -1.50rem;
 }
 
 .navbar-nav {
@@ -17,6 +18,16 @@
     background-repeat: no-repeat;
     background-size: cover; */
 
+}
+
+.navbar-brand {
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: -5rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
 }
 
 .nav-link {

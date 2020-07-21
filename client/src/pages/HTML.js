@@ -1,15 +1,12 @@
 import React from "react";
 import ContentHTML from "../components/ContentHTML";
-import { Link } from "react-router-dom";
+import Navbar from "../components/Navbar";
 
 function html() {
     return(
         <>
+        <Navbar />
         <ContentHTML />
-        <br />
-        <Link to="/html-quiz" className="btn btn-primary">
-            Take Quiz
-        </Link>
         </>
     );
 }
