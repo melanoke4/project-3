@@ -1,13 +1,14 @@
 import React from "react";
 
 import Navbar from "../components/Navbar";
+import ProfileCard from "../components/ProfileCard";
 
 function Profile() {
   return (
     <div>
       <Navbar />
-      <h1>Your Profile</h1>
-      <button>Update profile</button>
+      <ProfileCard />
+    
     </div>
   );
 }
