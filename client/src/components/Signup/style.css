@@ -1,0 +1,29 @@
+.avatar-img{
+    width: 100px;
+    
+   
+}
+.avatar-btn{
+    width: 120px;
+    border-radius: 50%;
+  
+}
+.sign-up-card{
+    text-align: center;
+    align-content: center;
+}
+.form{
+    display: inline-block;
+}
+.input-form{
+    width: 15%;
+    
+}
+.avatar-picker{
+    margin-top: -75px;
+    text-align: center;
+    align-content: center;
+}
+.avatar-submit-btn{
+width: 300px;
+}
