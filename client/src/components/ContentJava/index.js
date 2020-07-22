@@ -115,7 +115,7 @@ const ContentJava = () => {
 
         <div className="d-flex justify-content-center">
           <Link to="/js-quiz" className="btn" id="JSBtn">
-            CSS3 Quiz
+            Javascript Quiz
           </Link>
         </div>
 
