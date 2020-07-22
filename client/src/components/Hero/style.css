@@ -36,7 +36,7 @@
 #kccLogo {
   float: right;
     padding-right: 5vh;
-    margin-right: -3vh;
+    /* margin-right: -3vh; */
     margin-top: -10vh;
    
 }
