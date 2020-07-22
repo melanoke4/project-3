@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import Home from "./pages/Home";
 // import About from "./pages/About";
 import CoursesSection from "./pages/Courses";
-import Register from "./pages/Register";
+import Signup from "./components/Signup";
 import Wrapper from "./components/Wrapper";
 import Footer from "./components/Footer";
 import HTMLQuiz from "./components/HTMLQuiz";
@@ -15,7 +15,9 @@ import Javascript from "./pages/Javascript";
 import Profile from "./pages/Profile";
 
 
+
 function App() {
+  // var [state, setState] = React.useState({})
   return (
     <div>
       <Router>
@@ -23,7 +25,7 @@ function App() {
           <Wrapper>
             <Route exact path="/" component={Home} />
             <Route exact path="/Courses" component={CoursesSection} />
-            <Route exact path="/Register" component={Register} />
+            <Route exact path="/Register" component={Signup} />
             <Route exact path="/html" component={HTML} />
             <Route exact path="/css" component={CSS} />
             <Route exact path="/javascript" component={Javascript} />
