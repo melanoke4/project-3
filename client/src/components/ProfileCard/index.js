@@ -7,20 +7,29 @@ const ProfileCard = () => {
           <div className="card mb-3" id="profile-card">
       <div className="row no-gutters">
         <div className="col-md-4">
-          <img src="./images/avatar/07-monkey.png" className="card-img" alt="" />
+          <img src="./images/avatars/02-frog.png" className="card-img" alt="" />
         </div>
         <div className="col-md-8">
-          <div className="card-body">
-            <h5 className="card-title">Card title</h5>
-            <p className="card-text">
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
-            </p>
-            <p className="card-text">
-              <small className="text-muted">Last updated 3 mins ago</small>
-            </p>
+          <div className="card-body text-left">
+            <h5 className="card-title"></h5>
+            <div className="card-text text-left">
+              <ul>
+                <li>
+                  Username: phillipFrogmeister10
+                </li>
+                <li>
+                  Email: froggieFresh@gmail.com
+                </li>
+                <li>
+                  Password: ********
+                </li>
+              </ul>              
+            </div>
+            
           </div>
+          <button className="btn btn-success" id="profileB">
+                Update Profile
+          </button>
         </div>
       </div>
     </div>
