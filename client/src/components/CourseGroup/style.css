@@ -45,18 +45,30 @@ h1 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     position: relative;
-    padding: 5px;
     color: rgb(255, 255, 255);
     font-weight: bold;
     box-shadow: rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
     text-shadow: rgba(0, 0, 0, 0.25) 0px -1px 0px;
     border-radius: 4px;
-    margin-bottom: 5vh;
-    margin-right: 0vh;
-    margin-left: 24vh;
-    margin-top: -9vh;
+    margin-bottom: 16px;
+    margin-left: 20px;
 }
 
 #purchase {
     margin-left: 2.5vh;
+}
+
+.card-text {
+    text-align: center;
+    display: inline-flex;
+}
+
+#info-row {
+    background: #99e265;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    font-family: "Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+
 }
