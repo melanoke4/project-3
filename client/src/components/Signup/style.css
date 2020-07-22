@@ -1,11 +1,12 @@
 .avatar-img{
-    width: 100px;
+    width: 80px;
     
    
 }
 .avatar-btn{
     width: 120px;
     border-radius: 50%;
+    border-width: 10px;
   
 }
 .sign-up-card{
