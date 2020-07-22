@@ -28,6 +28,7 @@ const CoursesSection = (props) => {
                   <div className="card-body">
                     <h5 className="card-title">{product.name}</h5>
                     {/* this is stripe button  */}
+                      <div className="course-container">
                       <p className="App-intro" id="purchase">
                         <Checkout
                           name={"Kids Coding Corner"}
@@ -39,7 +40,7 @@ const CoursesSection = (props) => {
                       <a href={product.link} className="btn btn-sm" id="content-btn">
                         Course Content
                       </a>
-                                    
+                        </div>            
                     <h6 className="card-subtitle text-muted mb-2">
                       ${product.cost}
                     </h6>
