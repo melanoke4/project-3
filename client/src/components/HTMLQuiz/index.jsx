@@ -78,9 +78,6 @@ const renderResultMark = (question, answer) => {
     return (
       <div className="results" id="results">
             
-            <a href="/html">
-            <button className="btn btn-success">HTML5</button>
-            </a>
             <a href="/css">
             <button className="btn btn-success">CSS3</button>
             </a>
@@ -89,8 +86,10 @@ const renderResultMark = (question, answer) => {
             </a>
       <h2 id="h2">Results</h2>
       <ul>{renderResultsData()}</ul>
-      <button className="btn btn-primary" onClick={restart}>Restart Quiz</button>
-        
+      <button className="btn btn-success" id="restart-quiz"onClick={restart}>Restart Quiz</button>
+      <a href="/javascript">
+        <button className="btn btn-success" id="go-backBtn">Go Back</button>
+      </a>
     </div>
     )
   } else {
@@ -104,7 +103,7 @@ const renderResultMark = (question, answer) => {
           currentAnswer={currentAnswer} 
           handleClick={handleClick}
         />
-        <button className="btn btn-primary" onClick={next}>Submit</button>
+        <button className="btn" id="submit-html" onClick={next}>Submit</button>
       </div>
     );
   }

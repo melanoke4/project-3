@@ -76,7 +76,8 @@ h1,
     text-transform: uppercase;
 }
 
-.btn {
+
+#submit-css {
     color: #4f4c4c;
     background-color: #f4f4f4;
     padding: 10px 50px;
@@ -84,14 +85,31 @@ h1,
     font-size: 18px;
     margin-top: 20px;
     cursor: pointer;
-}
-
-.btn-primary {
-    color: #4f4c4c;
+    background-color: #ffc107;
     font-weight: bold;
 }
 
-.btn-primary:hover {
+.btn:hover {
     color: #4f4c4c;
     background-color: #c8ffbb;
+}
+
+#restart-quiz {
+    margin-right: 5vh;
+    padding: 10px 50px;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#go-backBtn{
+    margin-left: 5vh;
+    padding: 10px 50px;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: bold;
 }
