@@ -55,8 +55,14 @@ h1 {
     margin-right: 0vh;
     margin-left: 24vh;
     margin-top: -9vh;
+    float: left;
 }
 
 #purchase {
     margin-left: 2.5vh;
+ 
+    margin: 0 auto;
+}
+.course-container{
+    display: inline;
 }
