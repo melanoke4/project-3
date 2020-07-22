@@ -10,7 +10,7 @@ export default class SignUp extends Component {
         name: "",
         email: "",
         password: "",
-        avatar: "2",
+        avatar: "",
         isRedirect: false,
         error:""
       };

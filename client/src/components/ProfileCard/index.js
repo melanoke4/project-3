@@ -7,7 +7,7 @@ const ProfileCard = () => {
           <div className="card mb-3" id="profile-card">
       <div className="row no-gutters">
         <div className="col-md-4">
-          <img src="./images/avatars/02-frog.png" className="card-img" alt="" />
+  
         </div>
         <div className="col-md-8">
           <div className="card-body text-left">
@@ -15,13 +15,13 @@ const ProfileCard = () => {
             <div className="card-text text-left">
               <ul>
                 <li>
-                  Username: phillipFrogmeister10
+                  Name: Vance
                 </li>
                 <li>
-                  Email: froggieFresh@gmail.com
+                  Email: vancenewberry@gmail.com
                 </li>
                 <li>
-                  Password: ********
+                  Premium User: False
                 </li>
               </ul>              
             </div>

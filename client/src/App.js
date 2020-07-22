@@ -5,7 +5,6 @@ import Home from "./pages/Home";
 import CoursesSection from "./pages/Courses";
 import Signup from "./components/Signup";
 import Wrapper from "./components/Wrapper";
-import Footer from "./components/Footer";
 import HTMLQuiz from "./components/HTMLQuiz";
 import CSSQuiz from "./components/CSSQuiz";
 import JSQuiz from "./components/JSQuiz";
@@ -13,6 +12,7 @@ import HTML from "./pages/HTML";
 import CSS from "./pages/CSS";
 import Javascript from "./pages/Javascript";
 import Profile from "./pages/Profile";
+// import Signin from "./components/Signin";
 
 
 
@@ -26,6 +26,7 @@ function App() {
             <Route exact path="/" component={Home} />
             <Route exact path="/Courses" component={CoursesSection} />
             <Route exact path="/Register" component={Signup} />
+            {/* <Route exact path="/signin" component={Signin} /> */}
             <Route exact path="/html" component={HTML} />
             <Route exact path="/css" component={CSS} />
             <Route exact path="/javascript" component={Javascript} />
@@ -36,7 +37,7 @@ function App() {
           </Wrapper>
         </div>
       </Router>
-      <Footer />
+    
     </div>
   );
 }
