@@ -1,3 +1,10 @@
 #profile-card {
-    max-width: 540px;
+    border: none;
+    width: 75%;
+    margin-left: 40vh;
+    margin-top: 9vh;
+}
+
+#profileB {
+    margin-left: 20%;
 }
