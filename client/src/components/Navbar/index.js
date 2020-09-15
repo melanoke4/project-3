@@ -13,6 +13,7 @@ import {
   NavLink,
 } from "reactstrap";
 import "./style.css";
+import Avatar from "../avatar";
 
 const NavbarMain = (props) => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -32,7 +33,7 @@ const NavbarMain = (props) => {
             <NavLink href="/">Home</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="/Register">Login</NavLink>
+            <NavLink href="/Register">Register</NavLink>
           </NavItem>
           <Dropdown nav isOpen={dropdownOpen} toggle={toggle}>
             <DropdownToggle nav caret>
@@ -47,9 +48,14 @@ const NavbarMain = (props) => {
             </DropdownMenu>
           </Dropdown>
         </Nav>
+        <Avatar/>
       </Container>
-    </Navbar>
+    </Navbar> 
   );
 };
 
 export default NavbarMain;
+
+
+
+

@@ -6,6 +6,7 @@ import Quotes from "../components/Quotes";
 
 
 
+
 function Courses() {
     return(
         <div>

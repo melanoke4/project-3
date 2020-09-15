@@ -27,17 +27,6 @@ h1 {
     text-align: center;
 }
 
-.learn {
-    display: inline-block;
-    border-bottom: 2px solid #fdc743;
-    margin-bottom: 6px;
-    font-weight: 700;
-    font-size: 13px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
 .products {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -48,12 +37,42 @@ h1 {
 }
 
 .product {
-    padding: 40px;
+    padding: 5px;
 }
 
-.cart-button {
-    font-size: 20px;
-    padding: 10px;
+#content-btn {
+    background-image: linear-gradient(rgb(125, 197, 238), rgb(0, 140, 221) 85%, rgb(48, 162, 228));
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+    text-shadow: rgba(0, 0, 0, 0.25) 0px -1px 0px;
+    border-radius: 4px;
+
+    margin-bottom: 16px;
+    margin-left: 20px;
+
 }
 
+#purchase {
+    margin-left: 2.5vh;
 
+}
+
+.card-text {
+    text-align: center;
+    display: inline-flex;
+}
+
+#info-row {
+    background: #99e265;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    font-family: "Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+
+
+}

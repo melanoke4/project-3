@@ -1,52 +1,44 @@
-
 import React from "react";
-// import Alert from "./components/Alert";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Home from "./pages/Home";
 // import About from "./pages/About";
 import CoursesSection from "./pages/Courses";
-import Register from "./pages/Register";
-// import Login from "./pages/Login";
+import Signup from "./components/Signup";
 import Wrapper from "./components/Wrapper";
-import Cart from "./pages/Cart";
-// import Footer from "./components/Footer";
-import Quiz from "./pages/Quiz";
+import HTMLQuiz from "./components/HTMLQuiz";
+import CSSQuiz from "./components/CSSQuiz";
+import JSQuiz from "./components/JSQuiz";
+import HTML from "./pages/HTML";
+import CSS from "./pages/CSS";
+import Javascript from "./pages/Javascript";
+import Profile from "./pages/Profile";
+// import Signin from "./components/Signin";
 
 
 
-class App extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state={cart: []};
-  }
-
-  addToCart = (product) => {
-    this.setState((state) => {
-      return{
-        cart: state.cart.concat(product)
-      }
-    })
-  }
-  render() {
-
-  console.log(this.addToCart);
-
+function App() {
+  // var [state, setState] = React.useState({})
   return (
-   <Router>
-     <div>
-      <Wrapper>
-        <Route exact path="/" component={ Home }/>
-        <Route exact path="/Courses" render={(props) => {
-          return <CoursesSection {...props} addToCart={this.addToCart} /> }}/>
-        <Route exact path="/Quiz" component={ Quiz }/>
-        <Route exact path="/Cart" component={ Cart } />
-        <Route exact path="/Register" component={ Register }/>
-      </Wrapper>
-     </div>
-   </Router>
+    <div>
+      <Router>
+        <div>
+          <Wrapper>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/Courses" component={CoursesSection} />
+            <Route exact path="/Register" component={Signup} />
+            {/* <Route exact path="/signin" component={Signin} /> */}
+            <Route exact path="/html" component={HTML} />
+            <Route exact path="/css" component={CSS} />
+            <Route exact path="/javascript" component={Javascript} />
+            <Route exact path="/Profile" component={Profile} />
+            <Route path="/html-quiz" exact component={HTMLQuiz} />
+            <Route path="/js-quiz" exact component={JSQuiz} />
+            <Route path="/css-quiz" exact component={CSSQuiz} />
+          </Wrapper>
+        </div>
+      </Router>
+    
+    </div>
   );
-
-  }
 }
-
 export default App;
